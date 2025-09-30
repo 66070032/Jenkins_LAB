@@ -21,7 +21,7 @@ pipeline {
             steps {
                     // Build the Docker image
                     
-                    dir('./03_Jenkins/week13/03_Github_webhook') {
+                    dir('.') {
 		       sh 'ls -la'
                        sh 'echo "Running in $(pwd)"'
                        sh 'echo start build the Docker image = $DOCKER_IMAGE'
